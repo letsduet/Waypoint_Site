@@ -11,8 +11,9 @@
   --color-border: #DDD8D0;
   --color-border-light: #E8E4DD;
   --color-white: #FFFFFF;
-  --color-accent: #B87333;
-  --color-accent-hover: #D4944A;
+  --color-accent: #C4713B;
+  --color-accent-hover: #D8854E;
+  --color-accent-muted: rgba(196, 113, 59, 0.15);
 
   /* Brand colors */
   --stratum-color: #B87333;

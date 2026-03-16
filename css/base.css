@@ -8,8 +8,8 @@ body {
 }
 
 ::selection {
-  background: var(--color-bg-dark);
-  color: var(--color-bg);
+  background: var(--color-accent);
+  color: var(--color-white);
 }
 
 /* Headings — Oswald */
@@ -67,8 +67,8 @@ a:focus-visible {
 .section-label::before {
   content: '';
   width: 24px;
-  height: 1px;
-  background: var(--color-border);
+  height: 2px;
+  background: var(--color-accent);
 }
 
 .section-label--accent {
