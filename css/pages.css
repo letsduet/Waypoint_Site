@@ -1,0 +1,255 @@
+/* ========================================
+   HOME PAGE — index.html
+   ======================================== */
+
+/* Hero decorative line */
+.home-hero .hero__accent-line {
+  width: 60px;
+  height: 2px;
+  background-color: var(--color-accent);
+  margin-bottom: var(--space-md);
+}
+
+/* Brand portfolio section */
+.brands-preview {
+  padding: var(--space-xl) 0;
+}
+
+
+/* ========================================
+   ABOUT PAGE
+   ======================================== */
+
+.about-section {
+  padding: var(--space-lg) 0;
+}
+
+.about-section + .about-section {
+  border-top: 1px solid var(--color-light-gray);
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-md);
+  align-items: start;
+}
+
+@media (min-width: 768px) {
+  .about-content {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.about-content--reverse {
+  direction: ltr;
+}
+
+@media (min-width: 768px) {
+  .about-content--reverse .about-content__text {
+    order: -1;
+  }
+}
+
+/* Equipment list for about page */
+.equipment-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-sm);
+}
+
+@media (min-width: 768px) {
+  .equipment-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.equipment-item {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--color-light-gray);
+}
+
+.equipment-item__bullet {
+  width: 6px;
+  height: 6px;
+  background-color: var(--color-accent);
+  flex-shrink: 0;
+  transform: rotate(45deg);
+  margin-top: 0.4rem;
+}
+
+.equipment-item__name {
+  font-family: 'Oswald', 'Arial Narrow', sans-serif;
+  font-size: var(--text-base);
+  letter-spacing: 0.02em;
+}
+
+.equipment-item__type {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: var(--text-xs);
+  color: var(--color-gray);
+}
+
+
+/* ========================================
+   CAPABILITIES PAGE
+   ======================================== */
+
+.capabilities-section {
+  padding: var(--space-lg) 0;
+}
+
+.capabilities-section + .capabilities-section {
+  border-top: 1px solid var(--color-light-gray);
+}
+
+.finishing-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tolerance-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-sm);
+}
+
+@media (min-width: 768px) {
+  .tolerance-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .tolerance-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+
+/* ========================================
+   BRANDS PAGE
+   ======================================== */
+
+.brand-section--stratum {
+  background: linear-gradient(135deg, rgba(196,128,45,0.03) 0%, transparent 60%);
+}
+
+.brand-section--highpoint {
+  background: linear-gradient(135deg, rgba(90,114,71,0.04) 0%, transparent 60%);
+}
+
+.brand-section--coldbore {
+  background: linear-gradient(135deg, rgba(42,42,58,0.04) 0%, transparent 60%);
+}
+
+.brand-detail {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-md);
+  align-items: start;
+}
+
+@media (min-width: 768px) {
+  .brand-detail {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+/* ========================================
+   WHOLESALE / CONTACT PAGES
+   ======================================== */
+
+.form-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-lg);
+}
+
+@media (min-width: 768px) {
+  .form-layout {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+.form-layout--centered {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.form-sidebar {
+  background-color: var(--color-warm-bg);
+  padding: var(--space-md);
+  height: fit-content;
+}
+
+.form-sidebar__title {
+  font-family: 'Oswald', 'Arial Narrow', sans-serif;
+  font-size: var(--text-base);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: var(--space-sm);
+}
+
+.form-sidebar p {
+  font-size: var(--text-sm);
+  color: var(--color-gray);
+}
+
+.expect-list {
+  margin-top: var(--space-sm);
+}
+
+.expect-list li {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+  font-size: var(--text-sm);
+  color: var(--color-gray);
+}
+
+.expect-list li::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  background-color: var(--color-accent);
+  flex-shrink: 0;
+  transform: rotate(45deg);
+  margin-top: 0.35rem;
+}
+
+
+/* ========================================
+   404 PAGE
+   ======================================== */
+
+.page-404 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  text-align: center;
+}
+
+.page-404__code {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 8rem;
+  color: var(--color-light-gray);
+  line-height: 1;
+  margin-bottom: var(--space-sm);
+}
+
+.page-404__title {
+  margin-bottom: var(--space-sm);
+}
+
+.page-404__text {
+  color: var(--color-gray);
+  margin-bottom: var(--space-md);
+}
