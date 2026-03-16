@@ -1,22 +1,14 @@
-/* Box sizing */
 *, *::before, *::after { box-sizing: border-box; }
-
-/* Remove default margins & padding */
 body, h1, h2, h3, h4, h5, h6, p, ul, ol, figure, blockquote, dl, dd { margin: 0; }
 ul, ol { padding: 0; list-style: none; }
-
-/* Core defaults */
 html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
 body { min-height: 100vh; text-rendering: optimizeSpeed; line-height: 1.6; }
-
-/* Media defaults */
 img, picture, video, canvas, svg { display: block; max-width: 100%; }
-
-/* Form reset */
 input, button, textarea, select { font: inherit; }
 button { cursor: pointer; border: none; background: none; }
+table { border-collapse: collapse; border-spacing: 0; }
+a { text-decoration: none; color: inherit; }
 
-/* Remove animations for reduced-motion */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     animation-duration: 0.01ms !important;
@@ -25,9 +17,3 @@ button { cursor: pointer; border: none; background: none; }
     scroll-behavior: auto !important;
   }
 }
-
-/* Table reset */
-table { border-collapse: collapse; border-spacing: 0; }
-
-/* Link reset */
-a { text-decoration: none; color: inherit; }

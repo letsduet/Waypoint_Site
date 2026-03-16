@@ -4,19 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Wholesale — Waypoint Machine Works | CNC Manufacturing, Sanger TX</title>
-  <meta name="description" content="Wholesale pricing for retailers and distributors. Contract CNC manufacturing and private label services. Request a quote from Waypoint Machine Works.">
+  <meta name="description" content="Wholesale pricing for retailers and distributors. Contract CNC manufacturing and private label services from Waypoint Machine Works.">
   <link rel="canonical" href="https://waypointmachineworks.com/wholesale">
-
   <meta property="og:title" content="Wholesale — Waypoint Machine Works">
   <meta property="og:description" content="Wholesale pricing for retailers, contract CNC manufacturing, and private label services from Sanger, Texas.">
   <meta property="og:url" content="https://waypointmachineworks.com/wholesale">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://waypointmachineworks.com/img/og-image.jpg">
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=JetBrains+Mono:wght@400;500&family=Oswald:wght@400;500;600&family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Oswald:wght@300;400;500;600;700&family=Source+Serif+4:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/variables.css">
   <link rel="stylesheet" href="css/base.css">
@@ -27,31 +24,27 @@
 </head>
 <body>
   <div class="page-wrapper">
-
-    <!-- Header -->
-    <header class="site-header">
-      <div class="container">
-        <a href="/" class="site-logo">
-          <span class="logo-mark"></span>
-          WAYPOINT MACHINE WORKS
-        </a>
-        <nav class="main-nav" aria-label="Primary navigation">
-          <ul>
-            <li><a href="about.html">About</a></li>
-            <li><a href="capabilities.html">Capabilities</a></li>
-            <li><a href="brands.html">Brands</a></li>
-            <li><a href="wholesale.html" class="active">Wholesale</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
-        <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-      </div>
+    <header class="site-header" id="site-header">
+      <a href="/" class="site-logo">
+        <div class="logo-diamond"><span>W</span></div>
+        <div class="logo-text">
+          <span class="logo-text__primary">WAYPOINT</span>
+          <span class="logo-text__secondary">MACHINE WORKS</span>
+        </div>
+      </a>
+      <nav class="main-nav" aria-label="Primary navigation">
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="capabilities.html">Capabilities</a></li>
+          <li><a href="brands.html">Brands</a></li>
+          <li><a href="wholesale.html" class="active">Wholesale</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
     </header>
-
     <nav class="mobile-nav" aria-label="Mobile navigation">
       <a href="about.html">About</a>
       <a href="capabilities.html">Capabilities</a>
@@ -61,26 +54,26 @@
     </nav>
 
     <main>
-      <!-- Page Hero -->
-      <section class="page-hero">
+      <section class="page-hero topo-bg">
         <div class="container">
           <h1 class="page-hero__title">Wholesale</h1>
-          <p class="page-hero__subtitle">Retail &bull; Distribution &bull; Contract Manufacturing</p>
+          <div class="page-hero__subtitle">RETAIL &bull; DISTRIBUTION &bull; CONTRACT MANUFACTURING</div>
         </div>
       </section>
 
-      <!-- Form Section -->
-      <section class="section--lg">
+      <section class="section">
         <div class="container">
-          <p style="max-width: 700px; margin-bottom: var(--space-lg);">Waypoint Machine Works offers wholesale pricing for retailers and distributors, as well as contract CNC manufacturing services. Tell us about your project and we'll follow up within two business days.</p>
+          <p style="max-width: 700px; margin-bottom: 48px;">
+            Waypoint Machine Works offers wholesale pricing for retailers and distributors,
+            as well as contract CNC manufacturing services. Tell us about your project
+            and we'll follow up within two business days.
+          </p>
 
           <div class="form-layout">
-            <!-- Form -->
             <div>
               <form id="wholesale-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
                 <div id="wholesale-message" class="form-message"></div>
-
-                <div class="grid grid--2">
+                <div class="grid grid--2" style="gap: 16px; margin-bottom: 0;">
                   <div class="form-group">
                     <label for="company">Company Name <span class="required">*</span></label>
                     <input type="text" id="company" name="company" class="form-control" required>
@@ -90,8 +83,7 @@
                     <input type="text" id="contact-name" name="contact_name" class="form-control" required>
                   </div>
                 </div>
-
-                <div class="grid grid--2">
+                <div class="grid grid--2" style="gap: 16px; margin-bottom: 0;">
                   <div class="form-group">
                     <label for="email">Email <span class="required">*</span></label>
                     <input type="email" id="email" name="email" class="form-control" required>
@@ -101,7 +93,6 @@
                     <input type="tel" id="phone" name="phone" class="form-control">
                   </div>
                 </div>
-
                 <div class="form-group">
                   <label for="inquiry-type">Inquiry Type <span class="required">*</span></label>
                   <select id="inquiry-type" name="inquiry_type" class="form-control" required>
@@ -112,23 +103,18 @@
                     <option value="other">Other</option>
                   </select>
                 </div>
-
                 <div class="form-group">
                   <label for="message">Message <span class="required">*</span></label>
                   <textarea id="message" name="message" class="form-control" placeholder="Tell us about your project, quantities, timeline, or any specific requirements." required></textarea>
                 </div>
-
-                <!-- Honeypot -->
                 <div class="form-hp" aria-hidden="true">
                   <label for="website">Website</label>
                   <input type="text" id="website" name="_gotcha" tabindex="-1" autocomplete="off">
                 </div>
-
-                <button type="submit" class="btn btn--primary btn--lg">Send Inquiry</button>
+                <button type="submit" class="btn btn--primary">Send Inquiry</button>
               </form>
             </div>
 
-            <!-- Sidebar -->
             <div class="form-sidebar">
               <div class="form-sidebar__title">What to Expect</div>
               <p>We review every inquiry personally and typically respond within 2 business days.</p>
@@ -138,50 +124,46 @@
                 <li>NDA available upon request</li>
                 <li>Samples available for qualified retailers</li>
               </ul>
-              <hr style="border-color: var(--color-light-gray); margin: var(--space-md) 0;">
-              <p>For product-specific questions, warranty, or order support, please visit the relevant <a href="brands.html">brand store</a> directly.</p>
+              <div style="border-top: 1px solid var(--color-border); margin-top: 24px; padding-top: 24px;">
+                <p>For product-specific questions, warranty, or order support, visit the relevant <a href="brands.html" style="color: var(--color-accent);">brand store</a> directly.</p>
+              </div>
             </div>
           </div>
         </div>
       </section>
     </main>
 
-    <!-- Footer -->
     <footer class="site-footer">
-      <div class="container">
-        <div class="footer-grid">
-          <div class="footer-col">
-            <div class="footer-col__title">Waypoint Machine Works LLC</div>
-            <p>Precision CNC Manufacturing</p>
-            <p class="mono">Sanger, Texas 76266</p>
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-logo">
+            <div class="logo-diamond"><span>W</span></div>
+            <span class="footer-logo__text">WAYPOINT MACHINE WORKS</span>
           </div>
-          <div class="footer-col">
-            <div class="footer-col__title">Site</div>
-            <ul>
-              <li><a href="about.html">About</a></li>
-              <li><a href="capabilities.html">Capabilities</a></li>
-              <li><a href="brands.html">Brands</a></li>
-              <li><a href="wholesale.html">Wholesale</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <div class="footer-col__title">Brand Stores</div>
-            <ul>
-              <li><a href="https://stratumedgeco.com" target="_blank" rel="noopener noreferrer">Stratum Edge Co.</a></li>
-              <li><a href="https://highpointtrailworks.com" target="_blank" rel="noopener noreferrer">Highpoint Trailworks</a></li>
-              <li><a href="https://coldborecollective.com" target="_blank" rel="noopener noreferrer">Cold Bore Collective</a></li>
-            </ul>
-          </div>
+          <p>Precision CNC manufacturing in Sanger, Texas. Titanium, aluminum, stainless, and brass &mdash; machined in-house from raw billet to finished product.</p>
         </div>
-        <div class="footer-bottom">
-          &copy; 2026 Waypoint Machine Works LLC. All rights reserved.
+        <div class="footer-col">
+          <div class="footer-col__title">Company</div>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="capabilities.html">Capabilities</a></li>
+            <li><a href="brands.html">Our Brands</a></li>
+            <li><a href="wholesale.html">Wholesale</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col__title">Location</div>
+          <p>Sanger, Texas<br>Denton County<br>United States</p>
+          <div class="coords">33.3518&deg; N, 97.1742&deg; W</div>
         </div>
       </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 WAYPOINT MACHINE WORKS LLC</span>
+        <span>SANGER, TX</span>
+      </div>
     </footer>
-
   </div>
-
   <script src="js/nav.js"></script>
   <script src="js/forms.js"></script>
 </body>

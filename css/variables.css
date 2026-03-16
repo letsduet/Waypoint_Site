@@ -1,24 +1,25 @@
 :root {
-  /* Colors */
-  --color-black: #1A1A1A;
-  --color-dark: #3D3D5C;
-  --color-accent: #C4802D;
-  --color-accent-hover: #D4912E;
-  --color-warm-bg: #F5F0EB;
-  --color-text: #333333;
+  /* Colors — warm neutral / blueprint palette */
+  --color-bg: #F4F1EB;
+  --color-bg-alt: #EDEAE4;
+  --color-bg-dark: #2C2C28;
+  --color-bg-footer: #1E1E1C;
+  --color-text: #2C2C28;
+  --color-text-light: #777;
+  --color-text-muted: #999;
+  --color-text-faint: #BBB;
+  --color-border: #DDD8D0;
+  --color-border-light: #E8E4DD;
   --color-white: #FFFFFF;
-  --color-gray: #666666;
-  --color-light-gray: #E8E8E8;
-  --color-steel: #2A2A3A;
-  --color-dark-bg: #1E1E2A;
-  --color-hero-bg: #161622;
+  --color-accent: #B87333;
+  --color-accent-hover: #D4944A;
 
-  /* Brand accent colors */
-  --stratum-accent: #C4802D;
-  --highpoint-accent: #5A7247;
-  --coldbore-accent: #8B8B8B;
+  /* Brand colors */
+  --stratum-color: #B87333;
+  --highpoint-color: #7A8B5C;
+  --coldbore-color: #8B7355;
 
-  /* Spacing scale */
+  /* Spacing */
   --space-xs: 0.5rem;
   --space-sm: 1rem;
   --space-md: 2rem;
@@ -27,31 +28,21 @@
   --space-2xl: 8rem;
 
   /* Type scale */
-  --text-xs: 0.75rem;
-  --text-sm: 0.875rem;
-  --text-base: 1rem;
-  --text-lg: 1.125rem;
-  --text-xl: 1.25rem;
-  --text-2xl: 1.5rem;
-  --text-3xl: 2rem;
-  --text-4xl: 2.5rem;
-  --text-5xl: 3.5rem;
-  --text-6xl: 4.5rem;
+  --text-xs: 0.5625rem;   /* 9px */
+  --text-sm: 0.6875rem;   /* 11px */
+  --text-base: 0.9375rem; /* 15px */
+  --text-lg: 1.125rem;    /* 18px */
+  --text-xl: 1.5rem;      /* 24px */
+  --text-2xl: 2rem;       /* 32px */
+  --text-3xl: 2.25rem;    /* 36px */
+  --text-4xl: 2.625rem;   /* 42px */
+  --text-5xl: 4.5rem;     /* 72px */
 
   /* Transitions */
-  --transition-fast: 150ms ease;
-  --transition-base: 250ms ease;
-  --transition-slow: 400ms ease;
-
-  /* Borders */
-  --radius-sm: 2px;
-  --radius-md: 4px;
-  --radius-lg: 6px;
-
-  /* Shadows */
-  --shadow-sm: 0 1px 3px rgba(0,0,0,0.12);
-  --shadow-md: 0 4px 12px rgba(0,0,0,0.15);
-  --shadow-lg: 0 8px 30px rgba(0,0,0,0.2);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-fast: 0.3s ease;
+  --transition-base: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-slow: 0.9s cubic-bezier(0.16, 1, 0.3, 1);
 
   /* Header */
   --header-height: 72px;

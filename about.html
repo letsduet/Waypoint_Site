@@ -15,7 +15,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=JetBrains+Mono:wght@400;500&family=Oswald:wght@400;500;600&family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Oswald:wght@300;400;500;600;700&family=Source+Serif+4:wght@300;400;600&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/variables.css">
@@ -29,27 +29,28 @@
   <div class="page-wrapper">
 
     <!-- Header -->
-    <header class="site-header">
-      <div class="container">
-        <a href="/" class="site-logo">
-          <span class="logo-mark"></span>
-          WAYPOINT MACHINE WORKS
-        </a>
-        <nav class="main-nav" aria-label="Primary navigation">
-          <ul>
-            <li><a href="about.html" class="active">About</a></li>
-            <li><a href="capabilities.html">Capabilities</a></li>
-            <li><a href="brands.html">Brands</a></li>
-            <li><a href="wholesale.html">Wholesale</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
-        <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-      </div>
+    <header class="site-header" id="site-header">
+      <a href="/" class="site-logo">
+        <div class="logo-diamond"><span>W</span></div>
+        <div class="logo-text">
+          <span class="logo-text__primary">WAYPOINT</span>
+          <span class="logo-text__secondary">MACHINE WORKS</span>
+        </div>
+      </a>
+      <nav class="main-nav" aria-label="Primary navigation">
+        <ul>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="capabilities.html">Capabilities</a></li>
+          <li><a href="brands.html">Brands</a></li>
+          <li><a href="wholesale.html">Wholesale</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </header>
 
     <nav class="mobile-nav" aria-label="Mobile navigation">
@@ -62,142 +63,163 @@
 
     <main>
       <!-- Page Hero -->
-      <section class="page-hero">
+      <section class="page-hero topo-bg">
+        <div class="hero__coords">
+          <span>33.3518&deg; N</span>
+          <span>97.1742&deg; W</span>
+          <span>SANGER, TX</span>
+        </div>
         <div class="container">
+          <div class="section-label">THE MAKER, THE SHOP, THE APPROACH</div>
           <h1 class="page-hero__title">About</h1>
-          <p class="page-hero__subtitle">The maker, the shop, the approach</p>
         </div>
       </section>
 
-      <!-- The Maker -->
-      <section class="about-section">
+      <!-- 01 — The Maker -->
+      <section class="section">
         <div class="container">
-          <div class="about-content">
-            <div class="about-content__text">
-              <div class="section-header">
-                <span class="section-header__label">01 / The Maker</span>
-                <h2 class="section-header__title">One Engineer.<br>Every Product.</h2>
-                <div class="section-header__divider"></div>
-              </div>
-              <p>Waypoint Machine Works is owned and operated by a mechanical and manufacturing engineer with roughly a decade of experience across aerospace, automotive, plastics, consumer electronics, and food and beverage industries.</p>
-              <p>Every product sold under the Waypoint family of brands is designed, programmed, machined, finished, and shipped by the same person. There is no design team, no outsourced production, and no dropshipping operation. This is a real person making real things in a real shop.</p>
-              <p>That direct line from engineer to finished product is the point. It means faster iteration, tighter quality control, and the ability to stand behind every piece that leaves the building.</p>
-            </div>
+          <div class="grid grid--2" style="gap: 80px;">
             <div>
-              <div class="img-placeholder img-placeholder--portrait" style="background-color: #2A2A35;">
-                <span class="img-placeholder__label">[ Shop owner at the machine — portrait or working shot ]</span>
-              </div>
+              <div class="section-label">01 &mdash; THE MAKER</div>
+              <h2 style="margin-bottom: 24px; line-height: 1.15;">
+                One Engineer.<br>Every Product.
+              </h2>
+              <p style="margin-bottom: 20px;">
+                Waypoint Machine Works is owned and operated by a mechanical and
+                manufacturing engineer with roughly a decade of experience across
+                aerospace, automotive, plastics, consumer electronics, and food
+                and beverage industries.
+              </p>
+              <p style="margin-bottom: 20px;">
+                Every product sold under the Waypoint family of brands is designed,
+                programmed, machined, finished, and shipped by the same person. There
+                is no design team, no outsourced production, and no dropshipping
+                operation. This is a real person making real things in a real shop.
+              </p>
+              <p>
+                That direct line from engineer to finished product is the point. It
+                means faster iteration, tighter quality control, and the ability to
+                stand behind every piece that leaves the building.
+              </p>
             </div>
-          </div>
-        </div>
-      </section>
 
-      <!-- The Shop -->
-      <section class="about-section section--warm">
-        <div class="container">
-          <div class="section-header">
-            <span class="section-header__label">02 / The Shop</span>
-            <h2 class="section-header__title">30 &times; 40 &times; 14'</h2>
-            <div class="section-header__divider"></div>
-          </div>
-
-          <div class="about-content" style="margin-bottom: var(--space-md);">
-            <div>
-              <div class="img-placeholder img-placeholder--landscape" style="background-color: #252535;">
-                <span class="img-placeholder__label">[ Shop interior — wide shot of the building, equipment layout ]</span>
-              </div>
-            </div>
-            <div class="about-content__text">
-              <p>A metal building in Sanger, Texas — Denton County, about 50 miles north of Dallas. Purpose-built for CNC machining, fabrication, and fulfillment. Everything from raw bar stock to finished, packaged product happens under one roof.</p>
-              <p>The shop runs Haas CNC equipment for milling and turning, a fiber laser for cutting and engraving, and supporting equipment for finishing and post-processing. It's a compact operation built for flexibility and fast turnaround — not a production line.</p>
-            </div>
-          </div>
-
-          <h3 style="margin-bottom: var(--space-md);">Equipment</h3>
-          <div class="equipment-list">
-            <div class="equipment-item">
-              <div class="equipment-item__bullet"></div>
-              <div>
-                <div class="equipment-item__name">Haas VF-2</div>
-                <div class="equipment-item__type">Vertical Machining Center</div>
-              </div>
-            </div>
-            <div class="equipment-item">
-              <div class="equipment-item__bullet"></div>
-              <div>
-                <div class="equipment-item__name">Haas ST-20</div>
-                <div class="equipment-item__type">CNC Lathe</div>
-              </div>
-            </div>
-            <div class="equipment-item">
-              <div class="equipment-item__bullet"></div>
-              <div>
-                <div class="equipment-item__name">2–3kW Fiber Laser</div>
-                <div class="equipment-item__type">Cutter / Welder</div>
-              </div>
-            </div>
-            <div class="equipment-item">
-              <div class="equipment-item__bullet"></div>
-              <div>
-                <div class="equipment-item__name">CNC Plasma Table</div>
-                <div class="equipment-item__type">Sheet / Plate Cutting</div>
-              </div>
-            </div>
-            <div class="equipment-item">
-              <div class="equipment-item__bullet"></div>
-              <div>
-                <div class="equipment-item__name">Press Brake</div>
-                <div class="equipment-item__type">Sheet Metal Forming</div>
-              </div>
-            </div>
-            <div class="equipment-item">
-              <div class="equipment-item__bullet"></div>
-              <div>
-                <div class="equipment-item__name">Fiber Laser Engraver</div>
-                <div class="equipment-item__type">Marking / Engraving</div>
-              </div>
-            </div>
-            <div class="equipment-item">
-              <div class="equipment-item__bullet"></div>
-              <div>
-                <div class="equipment-item__name">Blast Cabinet &amp; Tumbler</div>
-                <div class="equipment-item__type">Surface Finishing</div>
-              </div>
-            </div>
-            <div class="equipment-item">
-              <div class="equipment-item__bullet"></div>
-              <div>
-                <div class="equipment-item__name">Inspection Tools</div>
-                <div class="equipment-item__type">Quality Control</div>
+            <!-- Image placeholder with corner brackets -->
+            <div class="img-placeholder img-placeholder--tall">
+              <div class="corner corner--tl"></div>
+              <div class="corner corner--tr"></div>
+              <div class="corner corner--bl"></div>
+              <div class="corner corner--br"></div>
+              <div style="text-align: center;">
+                <div class="datum-target" style="margin: 0 auto 16px;"></div>
+                <span class="img-placeholder__label">SHOP OWNER &mdash; PORTRAIT</span>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- The Approach -->
-      <section class="about-section">
+      <!-- 02 — The Shop -->
+      <section class="section section--alt">
         <div class="container">
-          <div class="about-content">
-            <div class="about-content__text">
-              <div class="section-header">
-                <span class="section-header__label">03 / The Approach</span>
-                <h2 class="section-header__title">How We Work</h2>
-                <div class="section-header__divider"></div>
-              </div>
-              <p>Quality over quantity. Every product is designed in-house and manufactured on-site. There are no vendor lead times to wait on, no overseas tooling to manage, and no middlemen between the engineer and the machine.</p>
-              <p>When something needs to change — a design improvement, a material upgrade, a new finish option — it happens in days, not months. That speed and control is what lets a small shop compete with companies ten times its size.</p>
-              <p>Made in Sanger, Texas. Made by the person who designed it.</p>
+          <div class="section-label">02 &mdash; THE SHOP</div>
+          <h2 style="margin-bottom: 40px; line-height: 1.15;">30 &times; 40 &times; 14'</h2>
+
+          <!-- Image placeholder with corner brackets -->
+          <div class="img-placeholder img-placeholder--tall" style="margin-bottom: 40px;">
+            <div class="corner corner--tl"></div>
+            <div class="corner corner--tr"></div>
+            <div class="corner corner--bl"></div>
+            <div class="corner corner--br"></div>
+            <div style="text-align: center;">
+              <div class="datum-target" style="margin: 0 auto 16px;"></div>
+              <span class="img-placeholder__label">SHOP INTERIOR &mdash; WIDE SHOT</span>
             </div>
+          </div>
+
+          <p style="margin-bottom: 40px; max-width: 680px;">
+            A 30&times;40&times;14&rsquo; metal building in Sanger, Texas &mdash;
+            Denton County, about 50 miles north of Dallas. Purpose-built for CNC
+            machining, fabrication, and fulfillment. Everything from raw bar stock
+            to finished, packaged product happens under one roof.
+          </p>
+
+          <h3 style="margin-bottom: 24px;">Equipment</h3>
+          <div class="grid grid--2" style="gap: 16px;">
+            <div class="equip-card">
+              <div class="equip-card__name">HAAS VF-2</div>
+              <div class="equip-card__type">Vertical Machining Center</div>
+            </div>
+            <div class="equip-card">
+              <div class="equip-card__name">HAAS ST-20</div>
+              <div class="equip-card__type">CNC Lathe</div>
+            </div>
+            <div class="equip-card">
+              <div class="equip-card__name">FIBER LASER</div>
+              <div class="equip-card__type">2&ndash;3kW Cutter / Welder</div>
+            </div>
+            <div class="equip-card">
+              <div class="equip-card__name">CNC PLASMA TABLE</div>
+              <div class="equip-card__type">Sheet / Plate Cutting</div>
+            </div>
+            <div class="equip-card">
+              <div class="equip-card__name">PRESS BRAKE</div>
+              <div class="equip-card__type">Sheet Metal Forming</div>
+            </div>
+            <div class="equip-card">
+              <div class="equip-card__name">FIBER LASER ENGRAVER</div>
+              <div class="equip-card__type">Marking / Engraving</div>
+            </div>
+            <div class="equip-card">
+              <div class="equip-card__name">BLAST CABINET &amp; TUMBLER</div>
+              <div class="equip-card__type">Surface Finishing</div>
+            </div>
+            <div class="equip-card">
+              <div class="equip-card__name">INSPECTION TOOLS</div>
+              <div class="equip-card__type">Quality Control</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 03 — The Approach -->
+      <section class="section">
+        <div class="container">
+          <div class="grid grid--2" style="gap: 80px;">
             <div>
-              <div class="img-placeholder img-placeholder--square" style="background-color: #2A2A35;">
-                <span class="img-placeholder__label">[ Detail shot — finished titanium parts, inspection ]</span>
+              <div class="section-label">03 &mdash; THE APPROACH</div>
+              <h2 style="margin-bottom: 24px; line-height: 1.15;">How We Work</h2>
+              <p style="margin-bottom: 20px;">
+                Quality over quantity. Every product is designed in-house and
+                manufactured on-site. There are no vendor lead times to wait on,
+                no overseas tooling to manage, and no middlemen between the
+                engineer and the machine.
+              </p>
+              <p style="margin-bottom: 20px;">
+                When something needs to change &mdash; a design improvement, a
+                material upgrade, a new finish option &mdash; it happens in days,
+                not months. That speed and control is what lets a small shop
+                compete with companies ten times its size.
+              </p>
+              <p>
+                Made in Sanger, Texas. Made by the person who designed it.
+              </p>
+            </div>
+
+            <!-- Image placeholder with corner brackets -->
+            <div class="img-placeholder img-placeholder--tall">
+              <div class="corner corner--tl"></div>
+              <div class="corner corner--tr"></div>
+              <div class="corner corner--bl"></div>
+              <div class="corner corner--br"></div>
+              <div style="text-align: center;">
+                <div class="datum-target" style="margin: 0 auto 16px;"></div>
+                <span class="img-placeholder__label">FINISHED PARTS &mdash; DETAIL</span>
               </div>
             </div>
           </div>
 
-          <div style="text-align: center; margin-top: var(--space-lg);">
-            <a href="capabilities.html" class="btn btn--primary btn--lg">See Our Full Capabilities</a>
+          <div style="text-align: center; margin-top: 60px;">
+            <a href="capabilities.html" class="btn btn--primary">See Our Full Capabilities &rarr;</a>
           </div>
         </div>
       </section>
@@ -205,35 +227,41 @@
 
     <!-- Footer -->
     <footer class="site-footer">
-      <div class="container">
-        <div class="footer-grid">
-          <div class="footer-col">
-            <div class="footer-col__title">Waypoint Machine Works LLC</div>
-            <p>Precision CNC Manufacturing</p>
-            <p class="mono">Sanger, Texas 76266</p>
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-logo">
+            <div class="logo-diamond"><span>W</span></div>
+            <span class="footer-logo__text">WAYPOINT MACHINE WORKS</span>
           </div>
-          <div class="footer-col">
-            <div class="footer-col__title">Site</div>
-            <ul>
-              <li><a href="about.html">About</a></li>
-              <li><a href="capabilities.html">Capabilities</a></li>
-              <li><a href="brands.html">Brands</a></li>
-              <li><a href="wholesale.html">Wholesale</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <div class="footer-col__title">Brand Stores</div>
-            <ul>
-              <li><a href="https://stratumedgeco.com" target="_blank" rel="noopener noreferrer">Stratum Edge Co.</a></li>
-              <li><a href="https://highpointtrailworks.com" target="_blank" rel="noopener noreferrer">Highpoint Trailworks</a></li>
-              <li><a href="https://coldborecollective.com" target="_blank" rel="noopener noreferrer">Cold Bore Collective</a></li>
-            </ul>
-          </div>
+          <p>
+            Precision CNC manufacturing in Sanger, Texas.
+            Titanium, aluminum, stainless, and brass &mdash; machined
+            in-house from raw billet to finished product.
+          </p>
         </div>
-        <div class="footer-bottom">
-          &copy; 2026 Waypoint Machine Works LLC. All rights reserved.
+        <div class="footer-col">
+          <div class="footer-col__title">Company</div>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="capabilities.html">Capabilities</a></li>
+            <li><a href="brands.html">Our Brands</a></li>
+            <li><a href="wholesale.html">Wholesale</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
         </div>
+        <div class="footer-col">
+          <div class="footer-col__title">Location</div>
+          <p>
+            Sanger, Texas<br>
+            Denton County<br>
+            United States
+          </p>
+          <div class="coords">33.3518&deg; N, 97.1742&deg; W</div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 WAYPOINT MACHINE WORKS LLC</span>
+        <span>SANGER, TX</span>
       </div>
     </footer>
 

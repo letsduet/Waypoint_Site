@@ -15,7 +15,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=JetBrains+Mono:wght@400;500&family=Oswald:wght@400;500;600&family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Oswald:wght@300;400;500;600;700&family=Source+Serif+4:wght@300;400;600&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/variables.css">
@@ -29,27 +29,28 @@
   <div class="page-wrapper">
 
     <!-- Header -->
-    <header class="site-header">
-      <div class="container">
-        <a href="/" class="site-logo">
-          <span class="logo-mark"></span>
-          WAYPOINT MACHINE WORKS
-        </a>
-        <nav class="main-nav" aria-label="Primary navigation">
-          <ul>
-            <li><a href="about.html">About</a></li>
-            <li><a href="capabilities.html" class="active">Capabilities</a></li>
-            <li><a href="brands.html">Brands</a></li>
-            <li><a href="wholesale.html">Wholesale</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
-        <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-      </div>
+    <header class="site-header" id="site-header">
+      <a href="/" class="site-logo">
+        <div class="logo-diamond"><span>W</span></div>
+        <div class="logo-text">
+          <span class="logo-text__primary">WAYPOINT</span>
+          <span class="logo-text__secondary">MACHINE WORKS</span>
+        </div>
+      </a>
+      <nav class="main-nav" aria-label="Primary navigation">
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="capabilities.html" class="active">Capabilities</a></li>
+          <li><a href="brands.html">Brands</a></li>
+          <li><a href="wholesale.html">Wholesale</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </header>
 
     <nav class="mobile-nav" aria-label="Mobile navigation">
@@ -62,134 +63,100 @@
 
     <main>
       <!-- Page Hero -->
-      <section class="page-hero">
+      <section class="page-hero topo-bg">
+        <div class="hero__coords">
+          <span>33.3518&deg; N</span>
+          <span>97.1742&deg; W</span>
+          <span>SANGER, TX</span>
+        </div>
         <div class="container">
+          <div class="section-label">EQUIPMENT, MATERIALS, TOLERANCES</div>
           <h1 class="page-hero__title">Capabilities</h1>
-          <p class="page-hero__subtitle">Equipment, materials, tolerances</p>
         </div>
       </section>
 
       <!-- Equipment -->
-      <section class="capabilities-section">
+      <section class="section">
         <div class="container">
-          <div class="section-header">
-            <span class="section-header__label">Equipment</span>
-            <h2 class="section-header__title">What We Run</h2>
-            <div class="section-header__divider"></div>
-          </div>
+          <div class="section-label">EQUIPMENT</div>
+          <h2 style="margin-bottom: 40px; line-height: 1.15;">What We Run</h2>
 
-          <div class="grid grid--2">
-            <div class="equipment-card">
-              <div class="equipment-card__name">Haas VF-2</div>
-              <div class="equipment-card__type">Vertical Machining Center</div>
-              <div class="equipment-card__specs">
-                30" &times; 16" &times; 20" travel &bull; 8,100 RPM &bull; 20-station tool changer &bull; 4th axis ready
-              </div>
+          <div class="grid grid--2" style="gap: 16px;">
+            <div class="equip-card">
+              <div class="equip-card__name">HAAS VF-2</div>
+              <div class="equip-card__type">Vertical Machining Center</div>
+              <div class="equip-card__spec">30" &times; 16" &times; 20" travel &bull; 8,100 RPM &bull; 20-station tool changer &bull; 4th axis ready</div>
             </div>
-            <div class="equipment-card">
-              <div class="equipment-card__name">Haas ST-20</div>
-              <div class="equipment-card__type">CNC Lathe</div>
-              <div class="equipment-card__specs">
-                8" chuck &bull; 20" max turning length &bull; 4,000 RPM &bull; Live tooling capable
-              </div>
+            <div class="equip-card">
+              <div class="equip-card__name">HAAS ST-20</div>
+              <div class="equip-card__type">CNC Lathe</div>
+              <div class="equip-card__spec">8" chuck &bull; 20" max turning length &bull; 4,000 RPM &bull; Live tooling capable</div>
             </div>
-            <div class="equipment-card">
-              <div class="equipment-card__name">Fiber Laser</div>
-              <div class="equipment-card__type">2–3kW Cutter / Welder</div>
-              <div class="equipment-card__specs">
-                Sheet and plate cutting &bull; Laser welding &bull; Mild steel, stainless, aluminum
-              </div>
+            <div class="equip-card">
+              <div class="equip-card__name">FIBER LASER</div>
+              <div class="equip-card__type">2&ndash;3kW Cutter / Welder</div>
+              <div class="equip-card__spec">Sheet and plate cutting &bull; Laser welding &bull; Mild steel, stainless, aluminum</div>
             </div>
-            <div class="equipment-card">
-              <div class="equipment-card__name">CNC Plasma Table</div>
-              <div class="equipment-card__type">Sheet / Plate Cutting</div>
-              <div class="equipment-card__specs">
-                4' &times; 8' table &bull; Mild steel &bull; Aluminum &bull; Structural and bracket work
-              </div>
+            <div class="equip-card">
+              <div class="equip-card__name">CNC PLASMA TABLE</div>
+              <div class="equip-card__type">Sheet / Plate Cutting</div>
+              <div class="equip-card__spec">4' &times; 8' table &bull; Mild steel &bull; Aluminum &bull; Structural and bracket work</div>
             </div>
-            <div class="equipment-card">
-              <div class="equipment-card__name">Press Brake</div>
-              <div class="equipment-card__type">Sheet Metal Forming</div>
-              <div class="equipment-card__specs">
-                Sheet metal bending &bull; Brackets &bull; Enclosures &bull; Custom forming dies
-              </div>
+            <div class="equip-card">
+              <div class="equip-card__name">PRESS BRAKE</div>
+              <div class="equip-card__type">Sheet Metal Forming</div>
+              <div class="equip-card__spec">Sheet metal bending &bull; Brackets &bull; Enclosures &bull; Custom forming dies</div>
             </div>
-            <div class="equipment-card">
-              <div class="equipment-card__name">Fiber Laser Engraver</div>
-              <div class="equipment-card__type">Marking / Engraving</div>
-              <div class="equipment-card__specs">
-                Permanent marking on metal &bull; Logos &bull; Serial numbers &bull; Maker's marks
-              </div>
+            <div class="equip-card">
+              <div class="equip-card__name">FIBER LASER ENGRAVER</div>
+              <div class="equip-card__type">Marking / Engraving</div>
+              <div class="equip-card__spec">Permanent marking on metal &bull; Logos &bull; Serial numbers &bull; Maker's marks</div>
             </div>
           </div>
-        </div>
-      </section>
-
-      <!-- Image break -->
-      <section style="padding: 0;">
-        <div class="img-placeholder img-placeholder--hero" style="background-color: #1E1E2A;">
-          <span class="img-placeholder__label">[ Haas VF-2 running a titanium program — chips flying, coolant spray ]</span>
         </div>
       </section>
 
       <!-- Materials -->
-      <section class="capabilities-section">
-        <div class="container">
-          <div class="section-header">
-            <span class="section-header__label">Materials</span>
-            <h2 class="section-header__title">What We Cut</h2>
-            <div class="section-header__divider"></div>
-          </div>
+      <section class="section--sm section--alt">
+        <div class="container container--narrow">
+          <div class="section-label section-label--center">MATERIALS</div>
+          <h2 class="text-center" style="margin-bottom: 40px;">What We Cut</h2>
 
           <div class="data-table">
-            <table>
-              <thead>
-                <tr>
-                  <th>Material</th>
-                  <th>Grade</th>
-                  <th>Common Applications</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><strong>Titanium</strong></td>
-                  <td class="mono-cell">6AL-4V (Grade 5)</td>
-                  <td>EDC tools, pry bars, cookware, rings</td>
-                </tr>
-                <tr>
-                  <td><strong>Aluminum</strong></td>
-                  <td class="mono-cell">6061-T6</td>
-                  <td>Mounting hardware, brackets, optics risers</td>
-                </tr>
-                <tr>
-                  <td><strong>Stainless Steel</strong></td>
-                  <td class="mono-cell">303 / 304 / 17-4 PH</td>
-                  <td>Fasteners, muzzle devices, camp kitchen</td>
-                </tr>
-                <tr>
-                  <td><strong>Brass</strong></td>
-                  <td class="mono-cell">C360</td>
-                  <td>Lanyard beads, accents, decorative hardware</td>
-                </tr>
-                <tr>
-                  <td><strong>Kydex</strong></td>
-                  <td class="mono-cell">Various</td>
-                  <td>Sheaths, holsters, carry systems</td>
-                </tr>
-              </tbody>
-            </table>
+            <div class="data-table__row">
+              <span class="data-table__grade">6AL-4V</span>
+              <span class="data-table__name">Grade 5 Titanium</span>
+              <span class="data-table__use">Primary &mdash; tools, clips, hardware</span>
+            </div>
+            <div class="data-table__row">
+              <span class="data-table__grade">6061-T6</span>
+              <span class="data-table__name">Aluminum</span>
+              <span class="data-table__use">Secondary &mdash; lightweight components</span>
+            </div>
+            <div class="data-table__row">
+              <span class="data-table__grade">17-4 PH</span>
+              <span class="data-table__name">Stainless Steel</span>
+              <span class="data-table__use">High-load fasteners &amp; springs</span>
+            </div>
+            <div class="data-table__row">
+              <span class="data-table__grade">C360</span>
+              <span class="data-table__name">Brass</span>
+              <span class="data-table__use">Accent components &amp; weights</span>
+            </div>
+            <div class="data-table__row">
+              <span class="data-table__grade">KYDEX</span>
+              <span class="data-table__name">Thermoplastic</span>
+              <span class="data-table__use">Sheaths, holsters, carry systems</span>
+            </div>
           </div>
         </div>
       </section>
 
       <!-- Finishing -->
-      <section class="capabilities-section section--warm">
+      <section class="section">
         <div class="container">
-          <div class="section-header">
-            <span class="section-header__label">Finishing</span>
-            <h2 class="section-header__title">Surface Treatments</h2>
-            <div class="section-header__divider"></div>
-          </div>
+          <div class="section-label">FINISHING</div>
+          <h2 style="margin-bottom: 40px; line-height: 1.15;">Surface Treatments</h2>
 
           <div class="finishing-grid">
             <span class="capability-tag">Stonewash Tumble</span>
@@ -205,13 +172,10 @@
       </section>
 
       <!-- Tolerances & Capacity -->
-      <section class="capabilities-section">
+      <section class="section section--alt">
         <div class="container">
-          <div class="section-header">
-            <span class="section-header__label">Specifications</span>
-            <h2 class="section-header__title">Tolerances &amp; Capacity</h2>
-            <div class="section-header__divider"></div>
-          </div>
+          <div class="section-label">SPECIFICATIONS</div>
+          <h2 style="margin-bottom: 40px; line-height: 1.15;">Tolerances &amp; Capacity</h2>
 
           <div class="tolerance-grid">
             <div class="spec-block">
@@ -224,7 +188,7 @@
             </div>
             <div class="spec-block">
               <div class="spec-block__label">Production Range</div>
-              <div class="spec-block__value">1–500+ Units</div>
+              <div class="spec-block__value">1&ndash;500+ Units</div>
             </div>
             <div class="spec-block">
               <div class="spec-block__label">Lead Time</div>
@@ -232,8 +196,8 @@
             </div>
           </div>
 
-          <div style="text-align: center; margin-top: var(--space-xl);">
-            <a href="wholesale.html" class="btn btn--primary btn--lg">Request a Quote</a>
+          <div style="text-align: center; margin-top: 60px;">
+            <a href="wholesale.html" class="btn btn--primary">Request a Quote &rarr;</a>
           </div>
         </div>
       </section>
@@ -241,35 +205,41 @@
 
     <!-- Footer -->
     <footer class="site-footer">
-      <div class="container">
-        <div class="footer-grid">
-          <div class="footer-col">
-            <div class="footer-col__title">Waypoint Machine Works LLC</div>
-            <p>Precision CNC Manufacturing</p>
-            <p class="mono">Sanger, Texas 76266</p>
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-logo">
+            <div class="logo-diamond"><span>W</span></div>
+            <span class="footer-logo__text">WAYPOINT MACHINE WORKS</span>
           </div>
-          <div class="footer-col">
-            <div class="footer-col__title">Site</div>
-            <ul>
-              <li><a href="about.html">About</a></li>
-              <li><a href="capabilities.html">Capabilities</a></li>
-              <li><a href="brands.html">Brands</a></li>
-              <li><a href="wholesale.html">Wholesale</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <div class="footer-col__title">Brand Stores</div>
-            <ul>
-              <li><a href="https://stratumedgeco.com" target="_blank" rel="noopener noreferrer">Stratum Edge Co.</a></li>
-              <li><a href="https://highpointtrailworks.com" target="_blank" rel="noopener noreferrer">Highpoint Trailworks</a></li>
-              <li><a href="https://coldborecollective.com" target="_blank" rel="noopener noreferrer">Cold Bore Collective</a></li>
-            </ul>
-          </div>
+          <p>
+            Precision CNC manufacturing in Sanger, Texas.
+            Titanium, aluminum, stainless, and brass &mdash; machined
+            in-house from raw billet to finished product.
+          </p>
         </div>
-        <div class="footer-bottom">
-          &copy; 2026 Waypoint Machine Works LLC. All rights reserved.
+        <div class="footer-col">
+          <div class="footer-col__title">Company</div>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="capabilities.html">Capabilities</a></li>
+            <li><a href="brands.html">Our Brands</a></li>
+            <li><a href="wholesale.html">Wholesale</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
         </div>
+        <div class="footer-col">
+          <div class="footer-col__title">Location</div>
+          <p>
+            Sanger, Texas<br>
+            Denton County<br>
+            United States
+          </p>
+          <div class="coords">33.3518&deg; N, 97.1742&deg; W</div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 WAYPOINT MACHINE WORKS LLC</span>
+        <span>SANGER, TX</span>
       </div>
     </footer>
 
