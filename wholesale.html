@@ -3,17 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wholesale — Waypoint Machine Works | CNC Manufacturing, Sanger TX</title>
-  <meta name="description" content="Wholesale pricing for retailers and distributors. Contract CNC manufacturing and private label services from Waypoint Machine Works.">
+  <title>Wholesale — Waypoint Machine Works | Retail, Distribution, Contract Manufacturing</title>
+  <meta name="description" content="Wholesale pricing for retailers and distributors. Contract CNC manufacturing and private label services. Request a quote from Waypoint Machine Works.">
   <link rel="canonical" href="https://waypointmachineworks.com/wholesale">
+
   <meta property="og:title" content="Wholesale — Waypoint Machine Works">
-  <meta property="og:description" content="Wholesale pricing for retailers, contract CNC manufacturing, and private label services from Sanger, Texas.">
+  <meta property="og:description" content="Retail, distribution, and contract manufacturing inquiries. Precision CNC manufacturing in Sanger, Texas.">
   <meta property="og:url" content="https://waypointmachineworks.com/wholesale">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://waypointmachineworks.com/img/og-image.jpg">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Oswald:wght@300;400;500;600;700&family=Source+Serif+4:wght@300;400;600&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/variables.css">
   <link rel="stylesheet" href="css/base.css">
@@ -24,6 +27,8 @@
 </head>
 <body>
   <div class="page-wrapper">
+
+    <!-- Header -->
     <header class="site-header" id="site-header">
       <a href="/" class="site-logo">
         <div class="logo-diamond"><span>W</span></div>
@@ -42,9 +47,12 @@
         </ul>
       </nav>
       <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
-        <span></span><span></span><span></span>
+        <span></span>
+        <span></span>
+        <span></span>
       </button>
     </header>
+
     <nav class="mobile-nav" aria-label="Mobile navigation">
       <a href="about.html">About</a>
       <a href="capabilities.html">Capabilities</a>
@@ -54,85 +62,93 @@
     </nav>
 
     <main>
+      <!-- Page Hero -->
       <section class="page-hero topo-bg">
+        <div class="hero__coords">
+          <span>33.3518&deg; N</span>
+          <span>97.1742&deg; W</span>
+          <span>SANGER, TX</span>
+        </div>
         <div class="container">
+          <div class="section-label">RETAIL &bull; DISTRIBUTION &bull; CONTRACT MANUFACTURING</div>
           <h1 class="page-hero__title">Wholesale</h1>
-          <div class="page-hero__subtitle">RETAIL &bull; DISTRIBUTION &bull; CONTRACT MANUFACTURING</div>
         </div>
       </section>
 
+      <!-- Wholesale Form -->
       <section class="section">
         <div class="container">
-          <p style="max-width: 700px; margin-bottom: 48px;">
-            Waypoint Machine Works offers wholesale pricing for retailers and distributors,
-            as well as contract CNC manufacturing services. Tell us about your project
-            and we'll follow up within two business days.
+          <p style="max-width: 680px; margin-bottom: 48px;">
+            Whether you&rsquo;re a retailer looking to stock our brands, a distributor
+            expanding your catalog, or a company in need of contract CNC manufacturing,
+            we&rsquo;d like to hear from you. Fill out the form below and we&rsquo;ll
+            respond within two business days.
           </p>
 
           <div class="form-layout">
-            <div>
-              <form id="wholesale-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-                <div id="wholesale-message" class="form-message"></div>
-                <div class="grid grid--2" style="gap: 16px; margin-bottom: 0;">
-                  <div class="form-group">
-                    <label for="company">Company Name <span class="required">*</span></label>
-                    <input type="text" id="company" name="company" class="form-control" required>
-                  </div>
-                  <div class="form-group">
-                    <label for="contact-name">Contact Name <span class="required">*</span></label>
-                    <input type="text" id="contact-name" name="contact_name" class="form-control" required>
-                  </div>
-                </div>
-                <div class="grid grid--2" style="gap: 16px; margin-bottom: 0;">
-                  <div class="form-group">
-                    <label for="email">Email <span class="required">*</span></label>
-                    <input type="email" id="email" name="email" class="form-control" required>
-                  </div>
-                  <div class="form-group">
-                    <label for="phone">Phone</label>
-                    <input type="tel" id="phone" name="phone" class="form-control">
-                  </div>
+            <form id="wholesale-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+              <div class="grid grid--2" style="gap: 16px; margin-bottom: 16px;">
+                <div class="form-group">
+                  <label for="company">Company Name <span aria-hidden="true">*</span></label>
+                  <input type="text" id="company" name="company" class="form-control" required>
                 </div>
                 <div class="form-group">
-                  <label for="inquiry-type">Inquiry Type <span class="required">*</span></label>
-                  <select id="inquiry-type" name="inquiry_type" class="form-control" required>
-                    <option value="" disabled selected>Select one</option>
-                    <option value="wholesale">Wholesale / Retail</option>
-                    <option value="contract">Contract Manufacturing</option>
-                    <option value="private-label">Private Label / White Label</option>
-                    <option value="other">Other</option>
-                  </select>
+                  <label for="contact-name">Contact Name <span aria-hidden="true">*</span></label>
+                  <input type="text" id="contact-name" name="contact_name" class="form-control" required>
                 </div>
-                <div class="form-group">
-                  <label for="message">Message <span class="required">*</span></label>
-                  <textarea id="message" name="message" class="form-control" placeholder="Tell us about your project, quantities, timeline, or any specific requirements." required></textarea>
-                </div>
-                <div class="form-hp" aria-hidden="true">
-                  <label for="website">Website</label>
-                  <input type="text" id="website" name="_gotcha" tabindex="-1" autocomplete="off">
-                </div>
-                <button type="submit" class="btn btn--primary">Send Inquiry</button>
-              </form>
-            </div>
-
-            <div class="form-sidebar">
-              <div class="form-sidebar__title">What to Expect</div>
-              <p>We review every inquiry personally and typically respond within 2 business days.</p>
-              <ul class="expect-list">
-                <li>Wholesale minimums vary by product line</li>
-                <li>Contract manufacturing quoted per project</li>
-                <li>NDA available upon request</li>
-                <li>Samples available for qualified retailers</li>
-              </ul>
-              <div style="border-top: 1px solid var(--color-border); margin-top: 24px; padding-top: 24px;">
-                <p>For product-specific questions, warranty, or order support, visit the relevant <a href="brands.html" style="color: var(--color-accent);">brand store</a> directly.</p>
               </div>
-            </div>
+
+              <div class="grid grid--2" style="gap: 16px; margin-bottom: 16px;">
+                <div class="form-group">
+                  <label for="email">Email <span aria-hidden="true">*</span></label>
+                  <input type="email" id="email" name="email" class="form-control" required>
+                </div>
+                <div class="form-group">
+                  <label for="phone">Phone</label>
+                  <input type="tel" id="phone" name="phone" class="form-control">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="inquiry-type">Inquiry Type</label>
+                <select id="inquiry-type" name="inquiry_type" class="form-control">
+                  <option value="wholesale">Wholesale / Retail</option>
+                  <option value="contract">Contract Manufacturing</option>
+                  <option value="private-label">Private Label / White Label</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message <span aria-hidden="true">*</span></label>
+                <textarea id="message" name="message" class="form-control" rows="6" required></textarea>
+              </div>
+
+              <!-- Honeypot -->
+              <div class="form-hp" aria-hidden="true">
+                <label for="website">Website</label>
+                <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+              </div>
+
+              <button type="submit" class="btn btn--primary">Submit Inquiry &rarr;</button>
+            </form>
+
+            <aside class="form-sidebar">
+              <h3 style="margin-bottom: 24px;">What to Expect</h3>
+              <ul class="expect-list">
+                <li>We review every inquiry personally and respond within 2 business days.</li>
+                <li>Wholesale minimums vary by product line.</li>
+                <li>Contract manufacturing quoted per project.</li>
+                <li>NDA available upon request for proprietary projects.</li>
+                <li>Samples available for qualified retailers.</li>
+              </ul>
+            </aside>
           </div>
         </div>
       </section>
     </main>
 
+    <!-- Footer -->
     <footer class="site-footer">
       <div class="footer-grid">
         <div class="footer-col">
@@ -140,7 +156,11 @@
             <div class="logo-diamond"><span>W</span></div>
             <span class="footer-logo__text">WAYPOINT MACHINE WORKS</span>
           </div>
-          <p>Precision CNC manufacturing in Sanger, Texas. Titanium, aluminum, stainless, and brass &mdash; machined in-house from raw billet to finished product.</p>
+          <p>
+            Precision CNC manufacturing in Sanger, Texas.
+            Titanium, aluminum, stainless, and brass &mdash; machined
+            in-house from raw billet to finished product.
+          </p>
         </div>
         <div class="footer-col">
           <div class="footer-col__title">Company</div>
@@ -154,7 +174,11 @@
         </div>
         <div class="footer-col">
           <div class="footer-col__title">Location</div>
-          <p>Sanger, Texas<br>Denton County<br>United States</p>
+          <p>
+            Sanger, Texas<br>
+            Denton County<br>
+            United States
+          </p>
           <div class="coords">33.3518&deg; N, 97.1742&deg; W</div>
         </div>
       </div>
@@ -163,7 +187,9 @@
         <span>SANGER, TX</span>
       </div>
     </footer>
+
   </div>
+
   <script src="js/nav.js"></script>
   <script src="js/forms.js"></script>
 </body>

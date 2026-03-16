@@ -3,17 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact — Waypoint Machine Works | CNC Manufacturing, Sanger TX</title>
-  <meta name="description" content="Contact Waypoint Machine Works for general inquiries, press, or partnerships. Sanger, Texas.">
+  <title>Contact — Waypoint Machine Works | Sanger, Texas</title>
+  <meta name="description" content="Contact Waypoint Machine Works for general inquiries, press, or partnerships. Located in Sanger, Texas.">
   <link rel="canonical" href="https://waypointmachineworks.com/contact">
+
   <meta property="og:title" content="Contact — Waypoint Machine Works">
-  <meta property="og:description" content="General inquiries, press, and partnerships. Waypoint Machine Works, Sanger, Texas.">
+  <meta property="og:description" content="General inquiries, press, and partnership contact for Waypoint Machine Works in Sanger, Texas.">
   <meta property="og:url" content="https://waypointmachineworks.com/contact">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://waypointmachineworks.com/img/og-image.jpg">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Oswald:wght@300;400;500;600;700&family=Source+Serif+4:wght@300;400;600&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/variables.css">
   <link rel="stylesheet" href="css/base.css">
@@ -24,6 +27,8 @@
 </head>
 <body>
   <div class="page-wrapper">
+
+    <!-- Header -->
     <header class="site-header" id="site-header">
       <a href="/" class="site-logo">
         <div class="logo-diamond"><span>W</span></div>
@@ -42,9 +47,12 @@
         </ul>
       </nav>
       <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
-        <span></span><span></span><span></span>
+        <span></span>
+        <span></span>
+        <span></span>
       </button>
     </header>
+
     <nav class="mobile-nav" aria-label="Mobile navigation">
       <a href="about.html">About</a>
       <a href="capabilities.html">Capabilities</a>
@@ -54,87 +62,97 @@
     </nav>
 
     <main>
+      <!-- Page Hero -->
       <section class="page-hero topo-bg">
+        <div class="hero__coords">
+          <span>33.3518&deg; N</span>
+          <span>97.1742&deg; W</span>
+          <span>SANGER, TX</span>
+        </div>
         <div class="container">
+          <div class="section-label">GENERAL INQUIRIES &bull; PRESS &bull; PARTNERSHIPS</div>
           <h1 class="page-hero__title">Contact</h1>
-          <div class="page-hero__subtitle">GENERAL INQUIRIES &bull; PRESS &bull; PARTNERSHIPS</div>
         </div>
       </section>
 
+      <!-- Contact Form -->
       <section class="section">
         <div class="container">
           <div class="form-layout">
-            <div>
-              <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-                <div id="contact-message" class="form-message"></div>
-                <div class="grid grid--2" style="gap: 16px; margin-bottom: 0;">
-                  <div class="form-group">
-                    <label for="name">Name <span class="required">*</span></label>
-                    <input type="text" id="name" name="name" class="form-control" required>
-                  </div>
-                  <div class="form-group">
-                    <label for="contact-email">Email <span class="required">*</span></label>
-                    <input type="email" id="contact-email" name="email" class="form-control" required>
-                  </div>
+            <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+              <div class="grid grid--2" style="gap: 16px; margin-bottom: 16px;">
+                <div class="form-group">
+                  <label for="name">Name <span aria-hidden="true">*</span></label>
+                  <input type="text" id="name" name="name" class="form-control" required>
                 </div>
                 <div class="form-group">
-                  <label for="subject">Subject <span class="required">*</span></label>
-                  <select id="subject" name="subject" class="form-control" required>
-                    <option value="" disabled selected>Select one</option>
-                    <option value="general">General Inquiry</option>
-                    <option value="press">Press / Media</option>
-                    <option value="partnership">Partnership</option>
-                    <option value="other">Other</option>
-                  </select>
-                </div>
-                <div class="form-group">
-                  <label for="contact-message-field">Message <span class="required">*</span></label>
-                  <textarea id="contact-message-field" name="message" class="form-control" required></textarea>
-                </div>
-                <div class="form-hp" aria-hidden="true">
-                  <label for="contact-website">Website</label>
-                  <input type="text" id="contact-website" name="_gotcha" tabindex="-1" autocomplete="off">
-                </div>
-                <button type="submit" class="btn btn--primary">Send Message</button>
-              </form>
-            </div>
-
-            <div>
-              <div class="contact-info">
-                <div class="contact-info__item">
-                  <div class="contact-info__label">Email</div>
-                  <div class="contact-info__value"><a href="mailto:info@waypointmachineworks.com">info@waypointmachineworks.com</a></div>
-                </div>
-                <div class="contact-info__item">
-                  <div class="contact-info__label">Location</div>
-                  <div class="contact-info__value">Sanger, TX 76266</div>
-                </div>
-                <div class="contact-info__item">
-                  <div class="contact-info__label">Coordinates</div>
-                  <div class="contact-info__value">33.3518&deg; N, 97.1742&deg; W</div>
+                  <label for="email">Email <span aria-hidden="true">*</span></label>
+                  <input type="email" id="email" name="email" class="form-control" required>
                 </div>
               </div>
 
-              <div class="form-sidebar" style="margin-top: 16px;">
-                <div class="form-sidebar__title">Product Support</div>
-                <p>For product questions, warranty claims, or order support, contact the brand store directly:</p>
-                <ul style="margin-top: 16px;">
-                  <li style="margin-bottom: 8px;"><a href="https://stratumedgeco.com" target="_blank" rel="noopener noreferrer" style="color: var(--color-accent); font-size: 11px;">Stratum Edge Co. &rarr;</a></li>
-                  <li style="margin-bottom: 8px;"><a href="https://highpointtrailworks.com" target="_blank" rel="noopener noreferrer" style="color: var(--color-accent); font-size: 11px;">Highpoint Trailworks &rarr;</a></li>
-                  <li style="margin-bottom: 8px;"><a href="https://coldborecollective.com" target="_blank" rel="noopener noreferrer" style="color: var(--color-accent); font-size: 11px;">Cold Bore Collective &rarr;</a></li>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <select id="subject" name="subject" class="form-control">
+                  <option value="general">General Inquiry</option>
+                  <option value="press">Press / Media</option>
+                  <option value="partnership">Partnership</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message <span aria-hidden="true">*</span></label>
+                <textarea id="message" name="message" class="form-control" rows="6" required></textarea>
+              </div>
+
+              <!-- Honeypot -->
+              <div class="form-hp" aria-hidden="true">
+                <label for="website">Website</label>
+                <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+              </div>
+
+              <button type="submit" class="btn btn--primary">Send Message &rarr;</button>
+            </form>
+
+            <aside class="form-sidebar">
+              <div class="contact-info" style="margin-bottom: 40px;">
+                <h3 style="margin-bottom: 24px;">Contact Info</h3>
+                <div style="margin-bottom: 16px;">
+                  <div class="section-label" style="margin-bottom: 4px;">EMAIL</div>
+                  <a href="mailto:info@waypointmachineworks.com">info@waypointmachineworks.com</a>
+                </div>
+                <div>
+                  <div class="section-label" style="margin-bottom: 4px;">LOCATION</div>
+                  <p>Sanger, TX 76266</p>
+                </div>
+              </div>
+
+              <div class="contact-info">
+                <h3 style="margin-bottom: 24px;">Product Support</h3>
+                <p style="margin-bottom: 16px;">
+                  For product-specific questions, warranty, or order support,
+                  please contact the brand store directly:
+                </p>
+                <ul style="list-style: none; padding: 0;">
+                  <li style="margin-bottom: 8px;">
+                    <a href="https://stratumedgeco.com" target="_blank" rel="noopener noreferrer">Stratum Edge Co. &rarr;</a>
+                  </li>
+                  <li style="margin-bottom: 8px;">
+                    <a href="https://highpointtrailworks.com" target="_blank" rel="noopener noreferrer">Highpoint Trailworks &rarr;</a>
+                  </li>
+                  <li>
+                    <a href="https://coldborecollective.com" target="_blank" rel="noopener noreferrer">Cold Bore Collective &rarr;</a>
+                  </li>
                 </ul>
               </div>
-
-              <div class="form-sidebar" style="margin-top: 16px;">
-                <div class="form-sidebar__title">Wholesale</div>
-                <p>For wholesale pricing or contract manufacturing, use the <a href="wholesale.html" style="color: var(--color-accent);">wholesale form</a>.</p>
-              </div>
-            </div>
+            </aside>
           </div>
         </div>
       </section>
     </main>
 
+    <!-- Footer -->
     <footer class="site-footer">
       <div class="footer-grid">
         <div class="footer-col">
@@ -142,7 +160,11 @@
             <div class="logo-diamond"><span>W</span></div>
             <span class="footer-logo__text">WAYPOINT MACHINE WORKS</span>
           </div>
-          <p>Precision CNC manufacturing in Sanger, Texas. Titanium, aluminum, stainless, and brass &mdash; machined in-house from raw billet to finished product.</p>
+          <p>
+            Precision CNC manufacturing in Sanger, Texas.
+            Titanium, aluminum, stainless, and brass &mdash; machined
+            in-house from raw billet to finished product.
+          </p>
         </div>
         <div class="footer-col">
           <div class="footer-col__title">Company</div>
@@ -156,7 +178,11 @@
         </div>
         <div class="footer-col">
           <div class="footer-col__title">Location</div>
-          <p>Sanger, Texas<br>Denton County<br>United States</p>
+          <p>
+            Sanger, Texas<br>
+            Denton County<br>
+            United States
+          </p>
           <div class="coords">33.3518&deg; N, 97.1742&deg; W</div>
         </div>
       </div>
@@ -165,7 +191,9 @@
         <span>SANGER, TX</span>
       </div>
     </footer>
+
   </div>
+
   <script src="js/nav.js"></script>
   <script src="js/forms.js"></script>
 </body>
