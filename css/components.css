@@ -46,7 +46,8 @@
   width: 28px;
   height: 28px;
   flex-shrink: 0;
-  opacity: 0.5;
+  filter: invert(1);
+  opacity: 0.6;
 }
 
 .logo-text {
@@ -64,9 +65,9 @@
 }
 
 .logo-text__secondary {
-  font-size: 7px;
+  font-size: 9px;
   letter-spacing: 3.5px;
-  color: #888;
+  color: #666;
   line-height: 1;
   margin-top: 2px;
 }
@@ -173,7 +174,7 @@
 .btn {
   display: inline-block;
   font-family: 'Space Mono', monospace;
-  font-size: 10px;
+  font-size: 11px;
   letter-spacing: 3px;
   text-transform: uppercase;
   padding: 16px 40px;
@@ -210,7 +211,7 @@
 .btn--ghost-light {
   background: transparent;
   color: var(--color-bg);
-  border: 1.5px solid #555;
+  border: 1.5px solid #888;
 }
 
 .btn--ghost-light:hover {
@@ -261,13 +262,13 @@
   display: block;
   font-size: var(--text-xs);
   letter-spacing: 2px;
-  color: #888;
+  color: #777;
 }
 
 .hero__coords span:last-child {
-  font-size: 8px;
+  font-size: 9px;
   letter-spacing: 2px;
-  color: #aaa;
+  color: #888;
   margin-top: 4px;
 }
 
@@ -334,9 +335,9 @@
 }
 
 .stat-bar__label {
-  font-size: 8px;
+  font-size: 10px;
   letter-spacing: 3px;
-  color: #777;
+  color: #999;
   margin-top: 4px;
 }
 
@@ -463,8 +464,8 @@
 }
 
 .equip-card__spec {
-  font-size: 10px;
-  color: #888;
+  font-size: 11px;
+  color: #666;
 }
 
 
@@ -494,8 +495,8 @@
 }
 
 .data-table__name {
-  font-size: 12px;
-  color: #666;
+  font-size: 13px;
+  color: #555;
 }
 
 .data-table__use {
@@ -552,7 +553,7 @@
 }
 
 .brand-tab__category {
-  font-size: 8px;
+  font-size: 10px;
   letter-spacing: 3px;
   color: var(--color-text-faint);
   margin-bottom: 6px;
@@ -749,7 +750,7 @@ select.form-control {
 }
 
 .callout--dark h2 { color: var(--color-bg); }
-.callout--dark p { color: #888; }
+.callout--dark p { color: #aaa; }
 
 
 /* ========================================
@@ -790,7 +791,7 @@ select.form-control {
 .site-footer {
   padding: 60px 48px 32px;
   background: var(--color-bg-footer);
-  color: #555;
+  color: #999;
 }
 
 .footer-grid {
@@ -807,22 +808,22 @@ select.form-control {
 .footer-col__title {
   font-size: var(--text-xs);
   letter-spacing: 3px;
-  color: #666;
+  color: #aaa;
   margin-bottom: 16px;
   text-transform: uppercase;
 }
 
 .footer-col p {
-  font-size: 12px;
-  color: #555;
+  font-size: 13px;
+  color: #999;
   line-height: 1.8;
 }
 
 .footer-col ul li { margin-bottom: 10px; }
 
 .footer-col a {
-  font-size: 11px;
-  color: #555;
+  font-size: 12px;
+  color: #999;
   transition: color var(--transition-fast);
 }
 
@@ -843,18 +844,18 @@ select.form-control {
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 3px;
-  color: #999;
+  color: #ccc;
 }
 
 .footer-col .coords {
   font-size: var(--text-xs);
-  color: #444;
+  color: #777;
   letter-spacing: 1px;
   margin-top: 12px;
 }
 
 .footer-bottom {
-  border-top: 1px solid #2C2C28;
+  border-top: 1px solid #333;
   padding-top: 16px;
   display: flex;
   justify-content: space-between;
@@ -864,7 +865,7 @@ select.form-control {
 
 .footer-bottom span {
   font-size: var(--text-xs);
-  color: #444;
+  color: #777;
   letter-spacing: 2px;
 }
 
@@ -909,7 +910,7 @@ select.form-control {
   display: block;
   font-size: var(--text-xs);
   letter-spacing: 2px;
-  color: #888;
+  color: #777;
 }
 
 @media (max-width: 768px) {

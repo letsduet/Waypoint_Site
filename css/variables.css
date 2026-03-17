@@ -5,9 +5,9 @@
   --color-bg-dark: #2C2C28;
   --color-bg-footer: #1E1E1C;
   --color-text: #2C2C28;
-  --color-text-light: #777;
-  --color-text-muted: #999;
-  --color-text-faint: #BBB;
+  --color-text-light: #555;
+  --color-text-muted: #777;
+  --color-text-faint: #999;
   --color-border: #DDD8D0;
   --color-border-light: #E8E4DD;
   --color-white: #FFFFFF;
@@ -29,8 +29,8 @@
   --space-2xl: 8rem;
 
   /* Type scale */
-  --text-xs: 0.5625rem;   /* 9px */
-  --text-sm: 0.6875rem;   /* 11px */
+  --text-xs: 0.6875rem;   /* 11px */
+  --text-sm: 0.8125rem;   /* 13px */
   --text-base: 0.9375rem; /* 15px */
   --text-lg: 1.125rem;    /* 18px */
   --text-xl: 1.5rem;      /* 24px */

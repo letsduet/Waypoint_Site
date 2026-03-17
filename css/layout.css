@@ -28,7 +28,7 @@
   color: var(--color-bg);
 }
 .section--dark h2, .section--dark h3 { color: var(--color-bg); }
-.section--dark p { color: #888; }
+.section--dark p { color: #aaa; }
 
 .section--alt { background-color: var(--color-bg-alt); }
 
