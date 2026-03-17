@@ -29,30 +29,24 @@
   .site-header { padding: 0 24px; }
 }
 
-/* Logo — diamond W mark + text */
+/* Logo — SVG compass mark + text */
 .site-logo {
   display: flex;
   align-items: center;
   gap: 12px;
 }
 
-.logo-diamond {
-  width: 32px;
-  height: 32px;
-  border: 1.5px solid var(--color-text);
-  transform: rotate(45deg);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.logo-icon {
+  width: 36px;
+  height: 36px;
   flex-shrink: 0;
 }
 
-.logo-diamond span {
-  font-family: 'Oswald', sans-serif;
-  font-size: 14px;
-  font-weight: 600;
-  transform: rotate(-45deg);
-  color: var(--color-text);
+.footer-logo-icon {
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+  opacity: 0.5;
 }
 
 .logo-text {
@@ -842,16 +836,7 @@ select.form-control {
   margin-bottom: 16px;
 }
 
-.footer-logo .logo-diamond {
-  width: 28px;
-  height: 28px;
-  border-color: #555;
-}
-
-.footer-logo .logo-diamond span {
-  font-size: 12px;
-  color: #888;
-}
+/* footer logo icon styles handled by .footer-logo-icon class */
 
 .footer-logo__text {
   font-family: 'Oswald', sans-serif;

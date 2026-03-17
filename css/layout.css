@@ -61,8 +61,21 @@ main { padding-top: var(--header-height); }
 
 /* Topographic background pattern */
 .topo-bg {
+  position: relative;
+}
+
+.topo-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
   background-image: url("../img/topo-bg.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  opacity: 0.35;
+  pointer-events: none;
+}
+
+.topo-bg > * {
+  position: relative;
 }
