@@ -11,10 +11,13 @@ sub-brands, ever. Product line leads; engineering capability is secondary. Never
 job-shop/RFQ language ("machining services," "get a quote," "contract manufacturing,"
 "private label"). See `docs/LANDING_SITE_AUDIT_v1.md` for the full rationale.
 
-**Honesty rules:** Only list equipment physically on the shop floor. No numeric tolerance
-claims unless verified by a measured artifact. Batch sizes are 10–25 units typical.
-Firearms content = machined accessories only; NOT an FFL; no firearms, receivers,
-serialized parts, or ammunition.
+**Honesty rules:** Site lists capabilities (not asset inventories), backed by the fixed
+asset register (owner's copy; not in repo). In service: Haas VF-2 (3-axis, CAT40, 8,100
+RPM, 20-tool ATC, Renishaw WIPS), Langmuir CrossFire CNC plasma table, MOPA fiber laser
+marker, MIG/TIG welder, horizontal bandsaw. NOT in service (do not claim): lathe, press
+brake, tumbler/bead-blast (planned/confirm). No numeric tolerance claims unless verified
+by a measured artifact. Batch sizes are 10–25 units typical. Firearms content = machined
+accessories only; NOT an FFL; no firearms, receivers, serialized parts, or ammunition.
 
 ## Tech Stack
 - Pure HTML/CSS/JS — no framework, no build step
@@ -37,9 +40,11 @@ serialized parts, or ammunition.
 ├── js/
 │   ├── nav.js          # Mobile nav toggle + header scroll effect
 │   └── forms.js        # Form validation + fetch submit (expects .form-message el, _gotcha honeypot)
-├── img/                # Logo SVG, favicon, topo-bg, shop/portrait/parts photos, og-image.jpg
+├── img/                # Logo SVG, favicon, topo-bg, portrait/parts photos, og-image.jpg (designed card)
 └── docs/
     ├── LANDING_SITE_AUDIT_v1.md  # Audit that drove the current page structure
+    ├── REPO_STRATEGY_v2.md       # Current repo strategy (two-repo BC-era plan; this repo is the interim site)
+    ├── RECONCILIATION_LOG.md     # Decision record — newest decision wins; equipment rule at §1.15
     └── archive/                  # Superseded BC-era docs — audit subject matter, NOT guidance
 ```
 
@@ -59,9 +64,9 @@ serialized parts, or ammunition.
 - **`docs/archive/`** contains superseded BigCommerce-era strategy docs that reference retired sub-brands. Treat as historical record only — never as guidance.
 
 ## Remaining TODO
-- [ ] Confirm actual floor equipment with owner (site currently lists conservatively: HAAS VF-2, fiber laser engraver, blast cabinet & tumbler, Mitutoyo inspection)
+- [ ] Confirm tumbler + bead blast cabinet status (register: "Planned/Confirm") — if in service, restore stonewash/bead-blast finishing claims
 - [ ] Add verified tolerance number once a measured artifact exists
 - [ ] Verify submit.php mail() delivery on Stellar Plus (SPF/DKIM for noreply@)
-- [ ] Import STRATEGY.md + asset list from the Waypoint chat project (not accessible from Claude Code; owner must export)
+- [ ] STRATEGY.md §2 design tokens (colors/radius/motion) still unverified — REPO_STRATEGY v2 + RECONCILIATION_LOG received, but not the token spec
 - [ ] Add skip-nav link for screen readers (accessibility)
-- [ ] Replace og-image.jpg (auto-cropped shop photo) with a designed 1200x630 when available
+- [ ] New product/shop photography when first batches complete (shop wide-shot removed by owner decision 2026-07-19)
