@@ -7,6 +7,15 @@ RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 RewriteCond %{HTTP_HOST} ^(www\.)?waypointmw\.com$ [NC]
 RewriteRule ^(.*)$ https://waypointmachineworks.com/$1 [L,R=301]
 
+# Redirect legacy sub-brand domains to primary domain
+RewriteCond %{HTTP_HOST} ^(www\.)?stratumedgeco\.com$ [NC,OR]
+RewriteCond %{HTTP_HOST} ^(www\.)?highpointtrailworks\.com$ [NC,OR]
+RewriteCond %{HTTP_HOST} ^(www\.)?coldborecollective\.com$ [NC]
+RewriteRule ^(.*)$ https://waypointmachineworks.com/ [L,R=301]
+
+# Retired pages
+RewriteRule ^brands(\.html)?$ https://waypointmachineworks.com/ [L,R=301]
+
 # Remove www
 RewriteCond %{HTTP_HOST} ^www\.waypointmachineworks\.com$ [NC]
 RewriteRule ^(.*)$ https://waypointmachineworks.com/$1 [L,R=301]

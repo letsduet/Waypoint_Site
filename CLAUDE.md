@@ -1,73 +1,67 @@
 # Waypoint Machine Works — Site Development Guide
 
 ## Project Overview
-Static corporate site for **Waypoint Machine Works LLC**, a one-person precision CNC manufacturing shop in Sanger, Texas (Denton County). The owner designs, machines, and ships products across three consumer brands.
+Static interim landing site for **Waypoint Machine Works LLC**, a one-person precision
+manufacturing company in Sanger, Texas (Denton County) that designs and machines its own
+line of precision hard goods (titanium EDC tools, firearms accessories, vehicle/overlanding
+hardware, reloading tools, camp/outdoor gear).
+
+**Positioning rule (Strategy v3):** Waypoint is a **product company** — one brand, no
+sub-brands, ever. Product line leads; engineering capability is secondary. Never add
+job-shop/RFQ language ("machining services," "get a quote," "contract manufacturing,"
+"private label"). See `docs/LANDING_SITE_AUDIT_v1.md` for the full rationale.
+
+**Honesty rules:** Only list equipment physically on the shop floor. No numeric tolerance
+claims unless verified by a measured artifact. Batch sizes are 10–25 units typical.
+Firearms content = machined accessories only; NOT an FFL; no firearms, receivers,
+serialized parts, or ammunition.
 
 ## Tech Stack
 - Pure HTML/CSS/JS — no framework, no build step
-- Fonts: Oswald (headings), Space Mono (UI/labels), Source Serif 4 (body)
-- Hosted via GitHub Pages
-- Dev server: `npx http-server -p 8080 -s`
+- Fonts (Strategy v3 §2): Barlow Condensed (headings), Barlow (long-form), Inter (body), JetBrains Mono (UI/labels)
+- Hosted on **Namecheap Stellar Plus** (Apache — `.htaccess` is live config). Upload site files to `public_html/`; do NOT upload `docs/` or `CLAUDE.md`.
+- This legacy site stays live as the public face until the WooCommerce build passes its migration gate.
+- Dev server: `npx http-server -p 8080`
 
 ## File Structure
 ```
-├── index.html          # Homepage — hero, stat bar, capabilities, materials, brands, CTA
-├── about.html          # About — maker bio, shop interior, equipment, approach
-├── brands.html         # Brands — Stratum Edge, Highpoint Trailworks, Cold Bore Collective
-├── capabilities.html   # Capabilities — equipment, tolerances, materials, finishes
-├── wholesale.html      # Wholesale inquiry form
-├── contact.html        # Contact form (Formspree — needs real form ID)
+├── index.html          # Homepage — product-first hero, product line, shop proof, materials, about-in-brief
+├── about.html          # About — maker bio, shop, equipment, approach
+├── capabilities.html   # Capabilities — floor equipment, materials, finishes (secondary to products)
+├── wholesale.html      # Wholesale inquiry form (retail/distribution ONLY)
+├── contact.html        # Contact form
 ├── 404.html            # Custom 404
-├── css/
-│   ├── reset.css       # CSS reset
-│   ├── variables.css   # Design tokens (colors, spacing, type scale)
-│   ├── base.css        # Typography, links, section labels
-│   ├── layout.css      # Grid, sections, topo background
-│   ├── components.css  # Header, footer, buttons, cards, forms, etc.
-│   └── pages.css       # Page-specific overrides
+├── submit.php          # Server-side form handler (both forms POST here; honeypot field: _gotcha)
+├── .htaccess           # HTTPS, www-strip, sub-brand domain 301s, /brands 301, clean URLs
+├── css/                # reset, variables (tokens), base, layout, components, pages
 ├── js/
 │   ├── nav.js          # Mobile nav toggle + header scroll effect
-│   └── brands.js       # Homepage brand tab switcher
-└── img/
-    ├── Waypoint-SVG.svg              # Compass rose logo (transparent bg, #333 strokes)
-    ├── favicon.svg                   # Browser tab icon
-    ├── topo-bg.png                   # Topographic contour background (3000x1500 RGBA)
-    ├── about-portrait.jpg            # Owner portrait
-    ├── about-shop.jpg                # Shop interior (used on homepage AND about page)
-    ├── about-parts.jpg               # CNC machining detail shot
-    ├── product-stratum-edge.jpg      # Stratum Edge product shot
-    ├── product-highpoint.jpg         # Highpoint Trailworks product shot
-    ├── product-cold-bore.jpg         # Cold Bore Collective product shot
-    ├── Stratum Logo Only Mockup.jpg  # Stratum Edge brand logo
-    ├── Highpoint Logo Only Mockup.jpg # Highpoint Trailworks brand logo
-    └── Coldbore Logo Only Mockup.jpg # Cold Bore Collective brand logo
+│   └── forms.js        # Form validation + fetch submit (expects .form-message el, _gotcha honeypot)
+├── img/                # Logo SVG, favicon, topo-bg, shop/portrait/parts photos, og-image.jpg
+└── docs/
+    ├── LANDING_SITE_AUDIT_v1.md  # Audit that drove the current page structure
+    └── archive/                  # Superseded BC-era docs — audit subject matter, NOT guidance
 ```
 
 ## Design Tokens (css/variables.css)
-- **Background:** `#F4F1EB` (warm cream)
-- **Text:** `#2C2C28` (near-black), `#555` (body), `#777` (muted), `#999` (faint)
-- **Accent:** `#C4713B` (warm copper/orange)
+- **Background:** `#F4F1EB` (warm cream) / alt `#EDEAE4`
+- **Text:** `#2C2C28`, `#555`, `#777`, `#999`
+- **Accent:** `#C4713B` (warm copper)
 - **Dark sections/footer:** `#2C2C28` / `#1E1E1C`
-- **Type scale:** xs=11px, sm=13px, base=15px, lg=18px, xl=24px
+- Colors/radius/motion pending verification against STRATEGY.md §2 (doc not in repo — see audit §3)
+- Spacing tokens are on the 8px grid; avoid introducing off-grid inline styles
 
 ## Important Notes
-- **Logo links** use `href="index.html"` (not `/`) for GitHub Pages compatibility
-- **Topo background** uses a `::before` pseudo-element at 35% opacity
-- **Footer SVG logo** uses `filter: invert(1) brightness(2)` to show light on dark bg
-- **about-shop.jpg** is shared between homepage and about page (same file, not duplicated)
-- **Contact form** action is placeholder: `https://formspree.io/f/YOUR_FORM_ID` — needs real endpoint
-- **Brand logos** have spaces in filenames (e.g., `Stratum Logo Only Mockup.jpg`)
-
-## Brands
-| Brand | Category | URL | Color |
-|-------|----------|-----|-------|
-| Stratum Edge Co. | EDC / Everyday Carry | stratumedgeco.com | `#B87333` |
-| Highpoint Trailworks | Overlanding / Off-Road | highpointtrailworks.com | `#7A8B5C` |
-| Cold Bore Collective | Firearms Accessories | coldborecollective.com | `#8B7355` |
+- **Logo links** use `href="index.html"` (not `/`)
+- **Topo background** uses a `::before` pseudo-element at 35% opacity (img/topo-bg.png, 64-color quantized)
+- **Footer SVG logo** uses `filter: invert(1) brightness(2)`
+- **Forms** POST to `/submit.php` (mail() to info@waypointmachineworks.com). Honeypot input is `name="_gotcha"` — must match forms.js and submit.php. `.form-message` element required in each form for feedback.
+- **`docs/archive/`** contains superseded BigCommerce-era strategy docs that reference retired sub-brands. Treat as historical record only — never as guidance.
 
 ## Remaining TODO
-- [ ] Replace `og-image.jpg` placeholder in meta tags with real social share image (1200x630)
-- [ ] Set real Formspree form ID in contact.html
-- [ ] Consider adding `loading="lazy"` to below-fold images
-- [ ] Brand tabs should use `role="tab"` / `tabindex` for keyboard accessibility
-- [ ] Add skip-nav link for screen readers
+- [ ] Confirm actual floor equipment with owner (site currently lists conservatively: HAAS VF-2, fiber laser engraver, blast cabinet & tumbler, Mitutoyo inspection)
+- [ ] Add verified tolerance number once a measured artifact exists
+- [ ] Confirm sub-brand domains point at this host (else redirect at registrar)
+- [ ] Verify submit.php mail() delivery on Stellar Plus (SPF/DKIM for noreply@)
+- [ ] Add skip-nav link for screen readers (accessibility)
+- [ ] Replace og-image.jpg (auto-cropped shop photo) with a designed 1200x630 when available

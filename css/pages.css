@@ -42,7 +42,7 @@
 }
 
 .brand-section__logo span {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Barlow Condensed', sans-serif;
   font-size: var(--text-lg);
   letter-spacing: 2px;
   color: var(--color-text);
