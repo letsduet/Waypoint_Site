@@ -32,7 +32,7 @@ serialized parts, or ammunition.
 ├── contact.html        # Contact form
 ├── 404.html            # Custom 404
 ├── submit.php          # Server-side form handler (both forms POST here; honeypot field: _gotcha)
-├── .htaccess           # HTTPS, www-strip, sub-brand domain 301s, /brands 301, clean URLs
+├── .htaccess           # HTTPS, www-strip, /brands 301, clean URLs (legacy domains redirect at registrar)
 ├── css/                # reset, variables (tokens), base, layout, components, pages
 ├── js/
 │   ├── nav.js          # Mobile nav toggle + header scroll effect
@@ -61,7 +61,7 @@ serialized parts, or ammunition.
 ## Remaining TODO
 - [ ] Confirm actual floor equipment with owner (site currently lists conservatively: HAAS VF-2, fiber laser engraver, blast cabinet & tumbler, Mitutoyo inspection)
 - [ ] Add verified tolerance number once a measured artifact exists
-- [ ] Confirm sub-brand domains point at this host (else redirect at registrar)
 - [ ] Verify submit.php mail() delivery on Stellar Plus (SPF/DKIM for noreply@)
+- [ ] Import STRATEGY.md + asset list from the Waypoint chat project (not accessible from Claude Code; owner must export)
 - [ ] Add skip-nav link for screen readers (accessibility)
 - [ ] Replace og-image.jpg (auto-cropped shop photo) with a designed 1200x630 when available
