@@ -50,3 +50,8 @@ ErrorDocument 404 /404.html
 
 # Block directory browsing
 Options -Indexes
+
+# Never serve form logs or other .log files
+<Files ~ "\.log$">
+  Require all denied
+</Files>
