@@ -6,13 +6,15 @@ RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 # Redirect waypointmw.com to primary domain
 RewriteCond %{HTTP_HOST} ^(www\.)?waypointmw\.com$ [NC]
+RewriteCond %{REQUEST_URI} !^/\.well-known/
 RewriteRule ^(.*)$ https://waypointmachineworks.com/$1 [L,R=301]
 
 # Retired pages
 RewriteRule ^brands(\.html)?$ https://waypointmachineworks.com/ [L,R=301]
 
-# Remove www
+# Remove www (except ACME/DCV validation paths — SSL.com validates via www over HTTP)
 RewriteCond %{HTTP_HOST} ^www\.waypointmachineworks\.com$ [NC]
+RewriteCond %{REQUEST_URI} !^/\.well-known/
 RewriteRule ^(.*)$ https://waypointmachineworks.com/$1 [L,R=301]
 
 # Remove .html extensions (clean URLs)
