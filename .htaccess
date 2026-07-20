@@ -1,6 +1,7 @@
-# Force HTTPS
+# Force HTTPS (except ACME/DCV validation files, which must stay reachable over HTTP)
 RewriteEngine On
 RewriteCond %{HTTPS} off
+RewriteCond %{REQUEST_URI} !^/\.well-known/
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 # Redirect waypointmw.com to primary domain
