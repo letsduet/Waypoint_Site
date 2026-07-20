@@ -1,0 +1,45 @@
+:root {
+  /* Colors — warm neutral / blueprint palette */
+  --color-bg: #F4F1EB;
+  --color-bg-alt: #EDEAE4;
+  --color-bg-dark: #2C2C28;
+  --color-bg-footer: #1E1E1C;
+  --color-text: #2C2C28;
+  --color-text-light: #555;
+  --color-text-muted: #777;
+  --color-text-faint: #999;
+  --color-border: #DDD8D0;
+  --color-border-light: #E8E4DD;
+  --color-white: #FFFFFF;
+  --color-accent: #C4713B;
+  --color-accent-hover: #D8854E;
+  --color-accent-muted: rgba(196, 113, 59, 0.15);
+
+  /* Spacing */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 2rem;
+  --space-lg: 4rem;
+  --space-xl: 6rem;
+  --space-2xl: 8rem;
+
+  /* Type scale */
+  --text-xs: 0.6875rem;   /* 11px */
+  --text-sm: 0.8125rem;   /* 13px */
+  --text-base: 0.9375rem; /* 15px */
+  --text-lg: 1.125rem;    /* 18px */
+  --text-xl: 1.5rem;      /* 24px */
+  --text-2xl: 2rem;       /* 32px */
+  --text-3xl: 2.25rem;    /* 36px */
+  --text-4xl: 2.625rem;   /* 42px */
+  --text-5xl: 4.5rem;     /* 72px */
+
+  /* Transitions */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-fast: 0.3s ease;
+  --transition-base: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-slow: 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Header */
+  --header-height: 72px;
+}
